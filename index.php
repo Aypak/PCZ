@@ -191,25 +191,33 @@
 				<div class="col-centered col-sm-4">
 					<div class="left-sidebar">
 						<h2>Top Ten</h2>
-						<!--category-productsr-->
-						<div class="panel-group category-products" id="accordian">
-						
-							<?php 
-						     $link=mysql_connect("localhost","root"," ") or die("Cannot Connect to the database!");
-								  mysql_select_db("chess_zambia",$link) or die ("Cannot select the database!");
-						   	$query="SELECT * FROM ratings_list order by rating desc limit 10";
-						    
-						      $resource=mysql_query($query,$link);
-						      echo "
-						    <table align=\"center\" border=\"1\" width=\"100%\">
-						    <tr>
-						   <td><b>Name</b></td> <td><b>Rating</b></td> <td><b>Rapid</b></td> <td><b>Blitz</b></td> ";
-							while($result=mysql_fetch_array($resource))
-						  		{ 
-						  		echo "<tr><td>".$result[1]."</td><td>".$result[7]."</td> <td>".$result[10]."</td> <td>".$result[13]."</td>" ;
-						 		 } echo "</table>";
-						  	 ?>
-						</div>
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<?php 
+									     $link=mysql_connect("localhost","root"," ") or die("Cannot Connect to the database!");
+											  mysql_select_db("chess_zambia",$link) or die ("Cannot select the database!");
+									   	$query="SELECT * FROM ratings_list order by rating desc limit 10";
+									    
+									      $resource=mysql_query($query,$link);
+									      echo "
+									    <table align=\"center\" border=\"1\" width=\"100%\">
+									    <tr>
+									   <td><b>Name</b></td> <td><b>Rating</b></td> <td><b>Rapid</b></td> <td><b>Blitz</b></td> ";
+										while($result=mysql_fetch_array($resource))
+									  		{ 
+								
+									  		echo "<tr><td>".$result[1]."</td><td>".$result[7]."</td> <td>".$result[10]."</td> <td>".$result[13]."</td>" ;
+									 		 } echo "</table>";
+									  	 ?>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<a href="#" class="btn btn-default add-to-cart">View Database</a>
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
 				
