@@ -92,7 +92,7 @@
 								<li><a href="index.html" class="active">News</a></li>
 								<li class="dropdown"><a href="#">Database<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Ratings</a></li>
+                                        <li><a href="database.php">Ratings</a></li>
 										<li><a href="product-details.html">Games</a></li> 
                                     </ul>
                                 </li> 
