@@ -143,8 +143,6 @@
 							</div>
 							<div class="item">
 								<div class="col-sm-6">
-									<!-- <h1><span>E</span>-SHOPPER</h1>
-									<h2>100% Responsive Design</h2> -->
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -185,7 +183,7 @@
 		</div>
 	</section><!--/slider-->
 	
-	<section>
+	<section><!--Top Ten tables -->
 		<div class="container">
 			<div class="row row-cenetered">
 				<div class="col-centered col-sm-4">
@@ -197,11 +195,12 @@
 										<?php 
 									     $link=mysql_connect("localhost","root"," ") or die("Cannot Connect to the database!");
 											  mysql_select_db("chess_zambia",$link) or die ("Cannot select the database!");
-									   	$query="SELECT * FROM ratings_list order by rating desc limit 10";
+									   	/*$query="SELECT * FROM ratings_list order by rating desc limit 10 ";*/
+									   	$query="SELECT * FROM ratings_list WHERE flag!='i' order by rating desc limit 10";
 									    
 									      $resource=mysql_query($query,$link);
 									      echo "
-									    <table align=\"center\" border=\"1\" width=\"100%\">
+									    <table class=\"topten-table table-striped table-bordered \">
 									    <tr>
 									   <td><b>Name</b></td> <td><b>Rating</b></td> <td><b>Rapid</b></td> <td><b>Blitz</b></td> ";
 										while($result=mysql_fetch_array($resource))
@@ -213,7 +212,7 @@
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<a href="#" class="btn btn-default add-to-cart">View Database</a>
+											<a href="database.php" class="btn btn-default add-to-cart">View Database</a>
 										</div>
 									</div>
 								</div>
@@ -221,57 +220,76 @@
 					</div>
 				</div>
 				
-				<div class="col-centered col-sm-8 padding-right">
-					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Latest</h2>
-						<div class="col-centered col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<h2>Game of the day</h2>
-											<img src="images/home/cb.jpg" alt="" />
-											<p>Anderssen - Kiezeritzky</p>
-<!-- 											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
- -->									</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<!-- <h2>$56</h2>
-												<p>Easy Polo Black Edition</p> -->
-												<a href="#" class="btn btn-default add-to-cart">View Game</a>
-											</div>
-										</div>
-								</div>
-								<div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href="#">View similar games</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-centered col-sm-4">
+				<div class="col-sm-4">
+					<div class="left-sidebar">
+						<h2>Top Ten Female</h2>
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<h2>Puzzle of the day</h2>
-										<img src="images/home/puzzle21.jpg" alt="" />
-										<p>White to play</p>
+										<?php 
+									     $link=mysql_connect("localhost","root"," ") or die("Cannot Connect to the database!");
+											  mysql_select_db("chess_zambia",$link) or die ("Cannot select the database!");
+									   	/*$query="SELECT * FROM ratings_list order by rating desc limit 10 ";*/
+									   	$query="SELECT * FROM ratings_list WHERE flag!='i' && sex='F' order by rating desc limit 10";
+									    
+									      $resource=mysql_query($query,$link);
+									      echo "
+									    <table class=\"topten-table table-striped table-bordered \" align=\"center\" border=\"1\" width=\"100%\">
+									    <tr>
+									   <td><b>Name</b></td> <td><b>Rating</b></td> <td><b>Rapid</b></td> <td><b>Blitz</b></td> ";
+										while($result=mysql_fetch_array($resource))
+									  		{ 
+								
+									  		echo "<tr><td>".$result[1]."</td><td>".$result[7]."</td> <td>".$result[10]."</td> <td>".$result[13]."</td>" ;
+									 		 } echo "</table>";
+									  	 ?>
 									</div>
 									<div class="product-overlay">
 										<div class="overlay-content">
-											<a href="#" class="btn btn-default add-to-cart">View Solution</a>
+											<a href="database.php" class="btn btn-default add-to-cart">View Database</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 					</div>
+				</div>
 
-					
+				<div class="col-sm-4">
+					<div class="left-sidebar">
+						<h2>Top Ten Junior</h2>
+							<div class="product-image-wrapper">
+								<div class="single-products">
+									<div class="productinfo text-center">
+										<?php 
+									     $link=mysql_connect("localhost","root"," ") or die("Cannot Connect to the database!");
+											  mysql_select_db("chess_zambia",$link) or die ("Cannot select the database!");
+									   	/*$query="SELECT * FROM ratings_list order by rating desc limit 10 ";*/
+									   	$query="SELECT * FROM ratings_list WHERE flag!='i' && birthday>=1995 order by rating desc limit 10";
+									    
+									      $resource=mysql_query($query,$link);
+									      echo "
+									    <table class=\"topten-table table-striped table-bordered \" align=\"center\" border=\"1\" width=\"100%\">
+									    <tr>
+									   <td><b>Name</b></td> <td><b>Rating</b></td> <td><b>Rapid</b></td> <td><b>Blitz</b></td>";
+										while($result=mysql_fetch_array($resource))
+									  		{ 
+								
+									  		echo "<tr><td>".$result[1]."</td><td>".$result[7]."</td> <td>".$result[10]."</td> <td>".$result[13]."</td>" ;
+									 		 } echo "</table>";
+									  	 ?>
+									</div>
+									<div class="product-overlay">
+										<div class="overlay-content">
+											<a href="database.php" class="btn btn-default add-to-cart">View Database</a>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section><!-- /Top Ten tables -->
 	
 	<footer id="footer"><!--Footer-->
 		<div class="footer-bottom">
