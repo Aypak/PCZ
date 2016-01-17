@@ -23,6 +23,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="events/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="events/assets/css/soon.css" rel="stylesheet">
+
 </head><!--/head-->
 
 <body>
@@ -120,7 +128,101 @@
 	<section id="slider"><!--slider-->
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
+			<!-- start -->
+	        <div class="col-sm-6">
+	            <ul class="event-list">
+	                <!-- event list 1 -->
+	                <li>
+	                    <time datetime="2016-01-20 0000">
+	                        <span class="day">20</span>
+	                        <span class="month">Jan</span>
+	                        <span class="year">2016</span>
+	                        <span class="time">14:00 PM</span>
+	                    </time>
+	                    <div class="info">
+	                            <h2 class="title">EVENT ONE</h2>
+	                            <p class="desc">Venue</p>
+
+	                            <!-- START TIMER 1 -->
+	                        <div id="timer" data-animated="FadeIn">
+	                            <ul>
+	                            <li id="days" class="timer_box"></li>
+	                            <li id="hours" class="timer_box"></li>
+	                            <li id="minutes" class="timer_box"></li>
+	                            <li id="seconds" class="timer_box"></li>
+	                            </ul>
+	                        </div>
+	                            <!-- END TIMER  1-->
+	                        <ul>
+	                            <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span>Register</a></li>
+	                        </ul>
+	                    </div>
+	                         <!-- /event list 1 ends -->
+
+	                         <!-- event list 2 -->
+	                    <li>
+	                        <time datetime="2016-01-31 0000">
+	                            <span class="day">31</span>
+	                            <span class="month">Jan</span>
+	                            <span class="year">2016</span>
+	                            <span class="time">9:00 AM</span>
+	                        </time>
+	                        <div class="info">
+	                            <h2 class="title">EVENT TWO</h2>
+	                            <p class="desc">Venue</p>
+
+	                            <!-- START TIMER  2-->
+	                            <div id="timer" data-animated="FadeIn">
+	                                <ul>
+	                                <li id="days1" class="timer_box"></li>
+	                                <li id="hours1" class="timer_box"></li>
+	                                <li id="minutes1" class="timer_box"></li>
+	                                <li id="seconds1" class="timer_box"></li>
+	                                </ul>
+	                            </div>
+	                            <!-- END TIMER 2 -->
+
+	                            <ul>
+	                                <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Register</a></li>
+	                                
+	                            </ul>
+	                        </div>
+	                         <!-- /event list 2 ends -->
+
+	                         <!-- event list 3 -->
+	                    <li>
+	                        <time datetime="2016-02-01 0000">
+	                            <span class="day">1</span>
+	                            <span class="month">Feb</span>
+	                            <span class="year">2016</span>
+	                            <span class="time">10:00 AM</span>
+	                        </time>
+	                        <div class="info">
+	                            <h2 class="title">EVENT THREE</h2>
+	                            <p class="desc">Venue</p>
+
+	                            <!-- START TIMER  3-->
+	                            <div id="timer" data-animated="FadeIn">
+	                                <ul>
+	                                <li id="days2" class="timer_box"></li>
+	                                <li id="hours2" class="timer_box"></li>
+	                                <li id="minutes2" class="timer_box"></li>
+	                                <li id="seconds2" class="timer_box"></li>
+	                                </ul>
+	                            </div>
+	                            <!-- END TIMER 3 -->
+
+	                            <ul>
+	                                <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Register</a></li>
+	                                
+	                            </ul>
+	                        </div>
+	                         <!-- /event list 3 ends -->
+	                </ul>
+	            </div>
+
+			<!-- /finish -->
+				<div class="col-sm-6">
 					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
@@ -310,5 +412,15 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="events/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="events/assets/js/modernizr.custom.js"></script>
+    <script src="events/assets/js/bootstrap.min.js"></script>
+    <script src="events/assets/js/soon/plugins.js"></script>
+    <script src="events/assets/js/soon/jquery.themepunch.revolution.min.js"></script>
+    <script src="events/assets/js/soon/custom.js"></script>
 </body>
 </html>
