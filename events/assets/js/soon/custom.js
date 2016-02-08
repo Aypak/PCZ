@@ -6,7 +6,7 @@ COUNTDOWN 1
     * Set your date here  (YEAR, MONTH (0 for January/11 for December), DAY, HOUR, MINUTE, SECOND)
     * according to the GMT+0 Timezone
     **/
-    var launch = new Date(2016, 0, 20, 14, 00);
+    var launch = new Date(2016, 0, 25, 9, 00);
     /*var launch1 = new Date(2016, 0, 1, 8, 00);*/
     /**
     * The script

@@ -18,13 +18,16 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
     color: #333;
 }
-
+.ctime {
+	font-size: 5pt;
+}
 
 /* Paragraph & Typographic */
 p {

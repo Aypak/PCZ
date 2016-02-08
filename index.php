@@ -25,15 +25,24 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 
 
-    <!-- Bootstrap core CSS -->
+   <!-- events links -->
     <link href="events/assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="events/assets/css/soon.css" rel="stylesheet">
+
+    <!-- news links -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+	<link href="news/css/site.css" rel="stylesheet" type="text/css" />
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="news/scripts/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+	<script src="news/scripts/news.js" type="text/javascript"></script>
 
 </head><!--/head-->
 
 <body>
+
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -115,182 +124,173 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-3">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
 	
-	<section id="slider"><!--slider-->
+	<!-- <section id="slider"><!slider--> <!-- --> 
 		<div class="container">
 			<div class="row">
 			<!-- start -->
-	        <div class="col-sm-6">
-	            <ul class="event-list">
-	                <!-- event list 1 -->
-	                <li>
-	                    <time datetime="2016-01-20 0000">
-	                        <span class="day">20</span>
-	                        <span class="month">Jan</span>
-	                        <span class="year">2016</span>
-	                        <span class="time">14:00 PM</span>
-	                    </time>
-	                    <div class="info">
-	                            <h2 class="title">EVENT ONE</h2>
-	                            <p class="desc">Venue</p>
+	        	<div class="col-sm-4">
+	        	<div class="panel panel-default ">
+	        	<div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>Upcoming Tournaments</b></div>
+	            		<ul class="event-list">
+	                		<!-- event list 1 -->
+	                		<li>
+			                    <time datetime="2016-01-25 0000">
+			                        <span class="day">25</span>
+			                        <span class="month">Jan</span>
+			                        <span class="year">2016</span>
+			                        <span class="time">9:00 PM</span>
+			                    </time>
+			                    <div class="info">
+			                            <h2 class="title">EVENT ONE </h2>
+			                            <p class="desc">Venue</p>
+			                            <p class="ctime">Registeration a day before</p>
 
-	                            <!-- START TIMER 1 -->
-	                        <div id="timer" data-animated="FadeIn">
-	                            <ul>
-	                            <li id="days" class="timer_box"></li>
-	                            <li id="hours" class="timer_box"></li>
-	                            <li id="minutes" class="timer_box"></li>
-	                            <li id="seconds" class="timer_box"></li>
-	                            </ul>
-	                        </div>
-	                            <!-- END TIMER  1-->
-	                        <ul>
-	                            <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span>Register</a></li>
-	                        </ul>
-	                    </div>
-	                         <!-- /event list 1 ends -->
+			                            <!-- START TIMER 1 -->
+			                        <div id="timer" data-animated="FadeIn">
+			                            <ul>
+			                            <li id="days" class="timer_box"></li>
+			                            <li id="hours" class="timer_box"></li>
+			                            <li id="minutes" class="timer_box"></li>
+			                            <li id="seconds" class="timer_box"></li>
+			                            </ul>
+			                        </div>
+			                            <!-- END TIMER  1-->
+			                        <ul>
+			                            <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span>Register</a></li>
+			                        </ul>
+			                    </div>
+			                         <!-- /event list 1 ends -->
 
-	                         <!-- event list 2 -->
-	                    <li>
-	                        <time datetime="2016-01-31 0000">
-	                            <span class="day">31</span>
-	                            <span class="month">Jan</span>
-	                            <span class="year">2016</span>
-	                            <span class="time">9:00 AM</span>
-	                        </time>
-	                        <div class="info">
-	                            <h2 class="title">EVENT TWO</h2>
-	                            <p class="desc">Venue</p>
+			                         <!-- event list 2 -->
+			                    <li>
+			                        <time datetime="2016-01-31 0000">
+			                            <span class="day">31</span>
+			                            <span class="month">Jan</span>
+			                            <span class="year">2016</span>
+			                            <span class="time">9:00 AM</span>
+			                        </time>
+			                        <div class="info">
+			                            <h2 class="title">EVENT TWO</h2>
+			                            <p class="desc">Venue</p>
 
-	                            <!-- START TIMER  2-->
-	                            <div id="timer" data-animated="FadeIn">
-	                                <ul>
-	                                <li id="days1" class="timer_box"></li>
-	                                <li id="hours1" class="timer_box"></li>
-	                                <li id="minutes1" class="timer_box"></li>
-	                                <li id="seconds1" class="timer_box"></li>
-	                                </ul>
-	                            </div>
-	                            <!-- END TIMER 2 -->
+			                            <!-- START TIMER  2-->
+			                            <div id="timer" data-animated="FadeIn">
+			                                <ul>
+			                                <li id="days1" class="timer_box"></li>
+			                                <li id="hours1" class="timer_box"></li>
+			                                <li id="minutes1" class="timer_box"></li>
+			                                <li id="seconds1" class="timer_box"></li>
+			                                </ul>
+			                            </div>
+			                            <!-- END TIMER 2 -->
 
-	                            <ul>
-	                                <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Register</a></li>
-	                                
-	                            </ul>
-	                        </div>
-	                         <!-- /event list 2 ends -->
+			                            <ul>
+			                                <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Register</a></li>
+			                                
+			                            </ul>
+			                        </div>
+			                         <!-- /event list 2 ends -->
 
-	                         <!-- event list 3 -->
-	                    <li>
-	                        <time datetime="2016-02-01 0000">
-	                            <span class="day">1</span>
-	                            <span class="month">Feb</span>
-	                            <span class="year">2016</span>
-	                            <span class="time">10:00 AM</span>
-	                        </time>
-	                        <div class="info">
-	                            <h2 class="title">EVENT THREE</h2>
-	                            <p class="desc">Venue</p>
+			                         <!-- event list 3 -->
+			                    <li>
+			                        <time datetime="2016-02-01 0000">
+			                            <span class="day">1</span>
+			                            <span class="month">Feb</span>
+			                            <span class="year">2016</span>
+			                            <span class="time">10:00 AM</span>
+			                        </time>
+			                        <div class="info">
+			                            <h2 class="title">EVENT THREE</h2>
+			                            <p class="desc">Venue</p>
 
-	                            <!-- START TIMER  3-->
-	                            <div id="timer" data-animated="FadeIn">
-	                                <ul>
-	                                <li id="days2" class="timer_box"></li>
-	                                <li id="hours2" class="timer_box"></li>
-	                                <li id="minutes2" class="timer_box"></li>
-	                                <li id="seconds2" class="timer_box"></li>
-	                                </ul>
-	                            </div>
-	                            <!-- END TIMER 3 -->
+			                            <!-- START TIMER  3-->
+			                            <div id="timer" data-animated="FadeIn">
+			                                <ul>
+			                                <li id="days2" class="timer_box"></li>
+			                                <li id="hours2" class="timer_box"></li>
+			                                <li id="minutes2" class="timer_box"></li>
+			                                <li id="seconds2" class="timer_box"></li>
+			                                </ul>
+			                            </div>
+			                            <!-- END TIMER 3 -->
 
-	                            <ul>
-	                                <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Register</a></li>
-	                                
-	                            </ul>
-	                        </div>
-	                         <!-- /event list 3 ends -->
-	                </ul>
-	            </div>
-
-			<!-- /finish -->
-				<div class="col-sm-6">
-					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#slider-carousel" data-slide-to="1"></li>
-							<li data-target="#slider-carousel" data-slide-to="2"></li>
-						</ol>
-						
-						<div class="carousel-inner">
-							<div class="item active">
-								<div class="col-sm-4">
-									<!-- <h1><span>E</span>-SHOPPER</h1> -->
-									<!-- <h2>Free E-Commerce Template</h2> -->
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Buy now</button>
-								</div>
-								<div class="col-sm-8">
-									<img src="images/home/clock1.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png"  class="pricing" alt="" />
-								</div>
-							</div>
-							<div class="item">
-								<div class="col-sm-6">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-									<button type="button" class="btn btn-default get">Read More</button>
-								</div>
-								<div class="col-sm-6">
-									<img src="images/home/etcc.jpg" class="girl img-responsive" alt="" />
-								</div>
-							</div>
-							
-							<div class="item">
-								<div class="col-sm-4">
-									<!-- <h1><span>E</span>-SHOPPER</h1>
-									<h2>Free Ecommerce Template</h2> -->
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<button type="button" class="btn btn-default get">Read More</button>
-								</div>
-								<div class="col-sm-8">
-									<img src="images/home/lpca.jpg" class="girl img-responsive" alt="" />
-								</div>
-							</div>
-							
-						</div>
-						
-						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
-							<i class="fa fa-angle-left"></i>
-						</a>
-						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
-							<i class="fa fa-angle-right"></i>
-						</a>
-					</div>
-					
-				</div>
-			</div>
+			                            <ul>
+			                                <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Register</a></li>
+			                                
+			                            </ul>
+			                        </div>
+			                         <!-- /event list 3 ends -->
+		               			 </ul>
+			            	</div>
+			            	</div>
+					<!-- /finish -->
+					<!-- Slider -->
+			<div class="col-sm-8">
+		    	<section id="intro">
+		    	<div class="panel panel-default ">
+		      		<div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>News / Updates</b></div>
+		      			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+							  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
+		 
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner carousal-height">
+							  <div class="item active">
+							    <img src="images/home/cb.jpg" alt="...">
+							    <div class="carousel-caption">
+							        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						          tempor incididunt ut labore et dolore magna aliqua. </p>
+							    </div>
+							  </div>
+		    				<div class="item">
+		      					<img src="images/home/etcc.jpg" alt="...">
+		      					<div class="carousel-caption">
+		          					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						          tempor incididunt ut labore et dolore magna aliqua. </p>
+		      					</div>
+		    				</div>
+						    <div class="item">
+						      <img src="images/home/lpca.jpg" alt="...">
+						      <div class="carousel-caption">
+						          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						          tempor incididunt ut labore et dolore magna aliqua. </p>
+						      </div>
+						    </div>
+						  </div>
+		 
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							  <span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							  <span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+					</div> <!-- Carousel -->
+		    	</div>
+		    	</div>
+		    	</section>
+		  </div>		
 		</div>
-	</section><!--/slider-->
+	</div>		
+
+<!-- 	</section> -->
 	
 	<section><!--Top Ten tables -->
 		<div class="container">
 			<div class="row row-cenetered">
 				<div class="col-centered col-sm-4">
 					<div class="left-sidebar">
-						<h2>Top Ten</h2>
+						<h2> Overall Top Ten</h2>
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
@@ -324,7 +324,7 @@
 				
 				<div class="col-sm-4">
 					<div class="left-sidebar">
-						<h2>Top Ten Female</h2>
+						<h2>Top Ten Girls</h2>
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
@@ -404,7 +404,7 @@
 		
 	</footer><!--/Footer-->
 	
-
+	
   
     <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -422,5 +422,18 @@
     <script src="events/assets/js/soon/plugins.js"></script>
     <script src="events/assets/js/soon/jquery.themepunch.revolution.min.js"></script>
     <script src="events/assets/js/soon/custom.js"></script>
+    <script type="text/javascript">
+    	$(function () {
+        $(".demo1").bootstrapNews({newsPerPage: 3,
+            autoplay: true,
+			pauseOnHover:true,
+            direction: 'up',
+            newsTickerInterval: 4000,
+            onToDo: function () {
+                //console.log(this);
+            }
+        });
+    });
+    </script>
 </body>
 </html>
